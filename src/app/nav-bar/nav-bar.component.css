@@ -1,0 +1,76 @@
+/* Header and Menu Styling */
+.header {
+  width: 100%;
+  background-color: #4C489D;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__left {
+  flex: 1;
+}
+
+.menu__center {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex: 2;
+}
+
+.menu__right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+/* Logo Styling */
+.logo {
+  width: 50px;  /* Adjust the width to an appropriate size */
+  height: auto;  /* Let the height adjust automatically to maintain aspect ratio */
+  object-fit: contain;  /* Ensure the image fits well within the dimensions */
+}
+
+/* Menu Buttons */
+.menu__button {
+  padding: 12px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #4C489D;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.menu__button:hover {
+  background-color: #6A679E;
+  transform: scale(1.05);
+}
+
+/* Icon Links */
+.icon-link {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: #D1D1D4;
+}
+
+.signout-button {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.signout-button:hover {
+  background-color: #ff1a1a;
+}

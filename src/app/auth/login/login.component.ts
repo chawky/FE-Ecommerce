@@ -7,7 +7,7 @@ import {
   Validators
 } from "@angular/forms";
 import {debounceTime} from "rxjs";
-import {LoginService} from "../login.service";
+import {AuthService} from "../../auth.service";
 import {Router} from "@angular/router";
 
 function mustHaveQuestionMark(control: AbstractControl) {
@@ -36,7 +36,7 @@ export class LoginComponent {
     }),
   });
   destroyRef = inject(DestroyRef);
-  loginService: LoginService = inject(LoginService);
+  loginService: AuthService = inject(AuthService);
   router: Router = inject(Router);
 
   get emailInvalid(): boolean {

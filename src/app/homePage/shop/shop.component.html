@@ -1,1 +1,17 @@
-<p>shop works!</p>
+<app-nav-bar></app-nav-bar>
+
+<div class="shopping-list">
+  @for (product of products;track product.id){
+  <div class="product-card">
+    <img [src]="convertToImageSrc(product.imageBytes)" [alt]="product.name" class="product-image" />
+    <div class="product-details">
+      <h3 class="product-title">{{product.name}}</h3>
+      <p class="product-description">{{product.category}}</p>
+      <p class="product-price">${{product.price}}</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  }
+
+</div>
+
