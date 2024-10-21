@@ -1,17 +1,24 @@
 <header class="header">
   <nav class="menu">
     <div class="menu__left">
-      <img src="shopping.ico"  class="logo"/>
+      <img src="shopping.ico" class="logo" />
     </div>
     <ul class="menu__center">
       <li><a href="#home" class="menu__button">Home</a></li>
       <li><a href="#about" class="menu__button">About</a></li>
+      <li><a class="menu__button" (click)="gotToUpload()">Upload Product</a></li>
       <li><a href="#contact" class="menu__button">Contact</a></li>
     </ul>
     <div class="menu__right">
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-input">
+        <a href="#search" class="icon-link search-icon"><i class="fa fa-search"></i></a>
+      </div>
       <a href="#settings" class="icon-link"><i class="fa fa-cog"></i></a>
       <a href="#cart" class="icon-link"><i class="fa fa-shopping-cart"></i></a>
-      <a href="#signout" class="menu__button signout-button" (click)="signout()">Sign Out</a>
+      <a href="#profile" class="icon-link"><i class="fa fa-user"></i></a>
+      <a href="#signout" class="menu__button signout-button">Sign Out</a>
     </div>
   </nav>
 </header>

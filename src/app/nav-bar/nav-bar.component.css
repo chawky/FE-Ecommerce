@@ -74,3 +74,93 @@
 .signout-button:hover {
   background-color: #ff1a1a;
 }
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.search-input:focus {
+  border-color: #4C489D;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-icon:hover {
+  color: #D1D1D4;
+}
+
+/* User Profile Icon */
+.icon-link {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+/* Adjust container for icons and search */
+.menu__right {
+  flex: 1;
+  display: flex;
+  align-items: center;  /* Aligns icons vertically with other items */
+  justify-content: flex-end;
+  gap: 1rem;  /* Spacing between elements */
+}
+
+/* Ensure icons are aligned and consistent in size */
+.icon-link {
+  font-size: 24px;  /* Icon size */
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;  /* Vertically center the icon */
+  justify-content: center;
+  padding: 12px;  /* Add padding to match the buttons */
+  border-radius: 50%;  /* Optional: Makes the icon area circular */
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.icon-link:hover {
+  color: #D1D1D4;
+  transform: scale(1.05);  /* Slight scaling on hover for a consistent effect */
+}
+
+/* Search Bar Styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.search-input:focus {
+  border-color: #4C489D;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

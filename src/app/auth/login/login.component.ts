@@ -64,4 +64,9 @@ export class LoginComponent {
     }
     this.form.reset();
   }
+
+  navigateToSignup() {
+    this.router.navigate(['/signup']);
+
+  }
 }

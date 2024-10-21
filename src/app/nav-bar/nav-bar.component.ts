@@ -1,5 +1,6 @@
 import {Component, inject} from '@angular/core';
 import {AuthService} from "../auth.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,8 +11,13 @@ import {AuthService} from "../auth.service";
 })
 export class NavBarComponent {
   authServ =  inject(AuthService);
+  router =  inject(Router);
   signout() {
 
     this.authServ.signOut();
+  }
+
+  gotToUpload() {
+    this.router.navigate(['/uploadProduct']);
   }
 }
