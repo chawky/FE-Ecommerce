@@ -9,7 +9,7 @@ import {UploadProductComponent} from "./upload-product/upload-product.component"
 const loggedInGuard: CanMatchFn = (route, segments) => {
   const router: Router = inject(Router);
   if (window.localStorage.getItem('loginResponse')) {
-    const tokenSaved: LoginResponse = JSON.parse(window.localStorage.getItem('loginResponse') || "");
+    const tokenSaved: LoginResponse = JSON.parse(window.localStorage.getItem('loginResponse')!);
     if (tokenSaved.token !== "") {
       return true;
     }

@@ -1,0 +1,400 @@
+/* Center the form in the div */
+.login {
+  width: 320px;
+  padding: 30px;
+  padding-top: 156px;
+  margin: auto;  /* Center the form horizontally */
+  text-align: center;  /* Center text inside the form */
+}
+
+/* Update placeholder color to black */
+.login__input::placeholder {
+  color: #000;  /* Set placeholder color to black */
+  opacity: 1;   /* Ensure placeholder color is solid */
+}
+
+/* Other existing styles */
+.login__field {
+  padding: 20px 0;
+  position: relative;
+}
+
+.login__input {
+  border: none;
+  border-bottom: 2px solid #D1D1D4;
+  background: none;
+  padding: 10px;
+  padding-left: 24px;
+  font-weight: 700;
+  width: 75%;
+  transition: 0.2s;
+}
+
+.login__input:focus,
+.login__input:hover {
+  outline: none;
+  border-bottom-color: #6A679E;
+}
+.login {
+  width: 320px;
+  padding: 20px 30px 60px; /* Reduce top padding and add space at the bottom */
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Fill container height for better centering */
+}
+
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it centers vertically */
+}
+
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+.login {
+  width: 320px;
+  padding: 20px 30px 60px; /* Reduce top padding and add space at the bottom */
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Fill container height for better centering */
+}
+
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it centers vertically */
+}
+
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+.login {
+  width: 320px;
+  padding: 20px 30px 60px; /* Reduce top padding and add space at the bottom */
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Fill container height for better centering */
+}
+
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it centers vertically */
+}
+
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+.login {
+  width: 320px;
+  padding: 20px 30px 60px; /* Reduce top padding and add space at the bottom */
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Fill container height for better centering */
+}
+
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it centers vertically */
+}
+
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+.login {
+  width: 320px;
+  padding: 20px 30px 60px; /* Reduce top padding and add space at the bottom */
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Fill container height for better centering */
+}
+
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it centers vertically */
+}
+
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+.login {
+  width: 320px;
+  padding: 20px 30px 60px; /* Reduce top padding and add space at the bottom */
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Fill container height for better centering */
+}
+
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it centers vertically */
+}
+
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+.login {
+  width: 320px;
+  padding: 20px 30px 60px; /* Reduce top padding and add space at the bottom */
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Fill container height for better centering */
+}
+
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it centers vertically */
+}
+
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+.login {
+  width: 320px;
+  padding: 20px 30px 60px; /* Reduce top padding and add space at the bottom */
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Fill container height for better centering */
+}
+
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it centers vertically */
+}
+
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+.login {
+  width: 320px;
+  padding: 20px 30px 60px; /* Reduce top padding and add space at the bottom */
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Fill container height for better centering */
+}
+
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it centers vertically */
+}
+
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+
+.login {
+  width: 320px;
+  padding: 20px 30px 60px; /* Reduce top padding and add space at the bottom */
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Fill container height for better centering */
+}
+
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it centers vertically */
+}
+
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+/* Center the form in the div */
+.login {
+  width: 320px;
+  padding: 20px 30px 60px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Center the content vertically */
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Placeholder color */
+.login__input::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+/* Icon color */
+.login__icon, .button__icon {
+  color: #000; /* Change icon color to black */
+}
+
+/* Other existing styles */
+.login__field {
+  padding: 10px 0;
+  position: relative;
+}
+
+.login__input {
+  border: none;
+  border-bottom: 2px solid #D1D1D4;
+  background: none;
+  padding: 10px;
+  padding-left: 24px;
+  font-weight: 700;
+  width: 75%;
+  transition: 0.2s;
+}
+
+.login__input:focus,
+.login__input:hover {
+  outline: none;
+  border-bottom-color: #6A679E;
+}
+/* Center the form in the div */
+.login {
+  width: 320px;
+  padding: 20px 30px 60px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Center the content vertically */
+.screen__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Placeholder color */
+.login__input::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+/* Icon alignment and color */
+.login__field {
+  padding: 10px 0;
+  position: relative;
+  display: flex;
+  align-items: center; /* Aligns icon with input vertically */
+}
+
+.login__icon {
+  color: #000; /* Change icon color to black */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Center icon vertically within the input */
+}
+
+/* Input field styling */
+.login__input {
+  border: none;
+  border-bottom: 2px solid #D1D1D4;
+  background: none;
+  padding: 10px 10px 10px 30px; /* Add left padding to create space for the icon */
+  font-weight: 700;
+  width: 75%;
+  transition: 0.2s;
+}
+
+.login__input:focus,
+.login__input:hover {
+  outline: none;
+  border-bottom-color: #6A679E;
+}
+
+/* Button icon styling */
+.button__icon {
+  font-size: 24px;
+  margin-left: auto;
+  color: #000;
+}
+.login__field {
+  padding: 15px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.login__icon {
+  color: #000;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login__input[type="file"] {
+  padding: 10px 10px 10px 35px; /* Add left padding for icon */
+  width: 100%;
+  cursor: pointer;
+}
+
+.login__input::placeholder {
+  color: #000;
+}

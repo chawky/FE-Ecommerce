@@ -1,2 +1,49 @@
 <app-nav-bar></app-nav-bar>
-<p>upload-product works!</p>
+<div class="container">
+  <div class="screen">
+    <div class="screen__content">
+      <form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="login">
+
+        <div class="login__field">
+          <i class="login__icon fas fa-tag"></i>
+          <input formControlName="title" class="login__input" placeholder="Product Name" />
+        </div>
+
+        <div class="login__field">
+          <i class="login__icon fas fa-align-left"></i>
+          <input formControlName="description" class="login__input" placeholder="Description" />
+        </div>
+
+        <div class="login__field">
+          <i class="login__icon fas fa-layer-group"></i>
+          <input formControlName="category" class="login__input" placeholder="Category" />
+        </div>
+
+        <div class="login__field">
+          <i class="login__icon fas fa-dollar-sign"></i>
+          <input formControlName="price" type="number" class="login__input" placeholder="Price" />
+        </div>
+
+        <!-- File upload field for images -->
+        <div class="login__field">
+          <i class="login__icon fas fa-image"></i>
+          <input
+            id="file"
+            type="file"
+            class="login__input"
+            formControlName="file"
+            multiple
+            placeholder="Image"
+            (change)="onFileChange($event)"
+          />
+        </div>
+
+        <button class="login__submit" type="submit">
+          Submit
+          <i class="button__icon fas fa-chevron-right"></i>
+        </button>
+
+      </form>
+    </div>
+  </div>
+</div>

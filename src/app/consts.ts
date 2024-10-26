@@ -2,10 +2,12 @@ import {HttpHandlerFn, HttpHeaders, HttpRequest} from "@angular/common/http";
 import {catchError, throwError} from "rxjs";
 import {inject} from "@angular/core";
 import {AuthService} from "./auth.service";
-
 export const url = 'http://localhost:8080'
 export const httOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'}),
+};
+export const httOptionsImage = {
+  headers: new HttpHeaders({'Content-Type': 'multipart/form-data; boundary=------border'}),
 };
 
 export interface LoginResponse {
@@ -30,7 +32,9 @@ export function LoggingInterceptor(req: HttpRequest<unknown>, next: HttpHandlerF
       headers: req.headers.set('Authorization', 'Bearer ' + tokenSaved.token),
 
     });
+    console.log('new REq refresh ', newReq);
     return next(newReq).pipe(catchError((err) => {
+      console.log('inside errrrr ', err);
       if ([401, 403].includes(err.status)) {
 
         if (err.status === 403) {
