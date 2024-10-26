@@ -3,6 +3,7 @@ import {NavBarComponent} from "../nav-bar/nav-bar.component";
 import {FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {ProductService} from "../product.service";
 import {AuthService} from "../auth.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-upload-product',
@@ -41,6 +42,7 @@ export class UploadProductComponent {
     file:
       new FormControl()
   });
+  private router = inject(Router);
 
   constructor() {
     this.auth.$refreshTokenReceived.subscribe((res) => {
@@ -61,7 +63,9 @@ export class UploadProductComponent {
         this.productForm.controls['file'].value!
       ).subscribe({
         next: (result) => {
-          console.log(result);
+          if(result){
+            this.router.navigateByUrl('/shop');
+          }
         },
         error: err => {
           console.log(err);

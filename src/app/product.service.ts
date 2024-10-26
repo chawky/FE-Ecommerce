@@ -1,5 +1,5 @@
 import {inject, Injectable, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Router} from "@angular/router";
 import {httOptions, httOptionsImage, Product, url} from "./consts";
 import {Observable} from "rxjs";
@@ -35,5 +35,9 @@ export class ProductService {
 
     return this.httpClient.post(url + "/saveProduct",formData)
 
+  }
+
+  deleteProduct(id: string):Observable<Product[]> {
+    return this.httpClient.delete<Product[]>(`${url}/deleteProduct/${id}`);
   }
 }

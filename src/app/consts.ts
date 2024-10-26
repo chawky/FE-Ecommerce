@@ -18,7 +18,8 @@ export interface LoginResponse {
   "refreshToken": "",
   "email": "",
   "role": [
-    "USER_ROLE"
+    "USER_ROLE",
+    "SELLER_ROLE"
   ]
 }
 

@@ -1,7 +1,7 @@
 import {Component, DestroyRef, inject} from '@angular/core';
 import {NavBarComponent} from "../../nav-bar/nav-bar.component";
 import {ProductService} from "../../product.service";
-import {Product} from "../../consts";
+import {LoginResponse, Product} from "../../consts";
 import {AuthService} from "../../auth.service";
 
 @Component({
@@ -18,6 +18,7 @@ export class ShopComponent {
   products: Product[]=[]
   destroyRef =  inject(DestroyRef)
   private auth  = inject(AuthService);
+  role : LoginResponse = JSON.parse(window.localStorage.getItem('loginResponse')!);
 
   constructor() {
     this.getAllProducts()
@@ -40,5 +41,15 @@ export class ShopComponent {
       }
     })
     this.destroyRef.onDestroy(() => sub.unsubscribe())
+  }
+
+  deleteProduct(product: Product) {
+    this.productService.deleteProduct(product.id).subscribe({
+      next: data => {
+       if(data){
+         this.products = data
+       }
+      }
+    })
   }
 }

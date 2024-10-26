@@ -66,3 +66,18 @@
 .add-to-cart:hover {
   background-color: #D4D3E8;
 }
+.delete-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 26px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
