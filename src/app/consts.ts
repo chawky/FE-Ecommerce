@@ -20,7 +20,8 @@ export interface LoginResponse {
   "role": [
     "USER_ROLE",
     "SELLER_ROLE"
-  ]
+  ],
+  "user": User,
 }
 
 const requestToNotBeIntercepted = ['/signin', ' /refreshtoken', '/signup']

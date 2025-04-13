@@ -1,5 +1,4 @@
-<app-nav-bar [productToCart]="productsTosend()"></app-nav-bar>
-
+<app-nav-bar [productToCart]="products"></app-nav-bar>
 <div class="shopping-list">
   @for (product of products;track product.id){
   <div class="product-card">
@@ -12,14 +11,12 @@
       <h3 class="product-title">{{ product.name }}</h3>
       <p class="product-description">{{ product.category }}</p>
       <p class="product-price">${{ product.price }}</p>
-      <button class="add-to-cart" (click)="addToCart(product)">
-        Add to Cart
+      <button class="add-to-cart" (click)="payment(product)">
+        finish shopping
       </button>
-      @if (role.role.includes('SELLER_ROLE') ){
       <button class="delete-button" (click)="deleteProduct(product)">
-        Delete Product
+        Delete Product from cart
       </button>
-      }
     </div>
   </div>
   }

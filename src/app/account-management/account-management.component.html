@@ -1,0 +1,28 @@
+<app-nav-bar></app-nav-bar>
+<div class="user-card-container">
+<div class="user-card">
+  <div class="user-details">
+    <h2 class="user-name">{{ profile?.firstName }} {{ profile?.lastName }}</h2>
+    <p class="user-username"> &#64; {{ profile?.userName }}</p>
+    <p class="user-email">📧 {{ profile?.email }}</p>
+  </div>
+
+  <div class="user-addresses">
+    <h3>Addresses:</h3>
+    <ul>
+      @for (address of profile?.addresses ;track address?.strNumber) {
+        <li>
+          📍 {{ address.street }} {{ address.strNumber }}, {{ address.city }}, {{ address.postalCode }}
+        </li>
+      }
+
+    </ul>
+  </div>
+
+  <div class="user-actions">
+    <button class="edit-button">Edit</button>
+    <button class="delete-button">Delete</button>
+  </div>
+</div>
+</div>
+

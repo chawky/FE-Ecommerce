@@ -1,0 +1,106 @@
+/* Center the user card */
+.user-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.user-card {
+  background-color: #5D54A4;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.user-details h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.user-username {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.user-role,
+.user-email {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.user-addresses {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.user-addresses h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.user-addresses ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-addresses li {
+  font-size: 0.9rem;
+  background-color: #6C63AC;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.user-actions {
+  margin-top: 15px;
+}
+
+.edit-button {
+  background-color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 26px;
+  border: none;
+  color: #4C489D;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 8px;
+}
+
+.edit-button:hover {
+  background-color: #D4D3E8;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 26px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
